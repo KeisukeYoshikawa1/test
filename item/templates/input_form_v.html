@@ -1,0 +1,13 @@
+<html>
+<head></head>
+<body>
+  <h4>入力</h4>
+  <form method="post">
+  {% csrf_token %}
+  <table>
+    {{ form }}
+  </table>
+  <input type="submit" />
+  </form>
+</body>
+</html>

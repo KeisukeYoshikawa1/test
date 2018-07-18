@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>InputForm</title>
+</head>
+<body>
+  <h4>入力</h4>
+  <form action="" method="post">
+    {% csrf_token %}
+    {% for error in form.param1.errors %}
+    <div style="color:red">  {{ error }} </div>
+    {% endfor %}
+    <table>
+    {{ form.param1.label }}{{ form.param1 }}
+    </table>
+    <br>
+    <input type="submit" /><br>
+  </form>
+  {{ message }}
+</body>
+</html>

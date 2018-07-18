@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ListView</title>
+</head>
+<body>
+<table border="1">
+  <tr><th>name</th></tr>
+  {% for item in object_list %}
+    <tr>
+      <td>{{ item.name }}</td>
+    </tr>
+  {% endfor %}
+</table>
+</body>
+</html>

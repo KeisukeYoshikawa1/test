@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sample Form</title>
+</head>
+<body>
+<h4>入力</h4>
+<form action="" method="post">
+  {% csrf_token %}
+  <table>
+    {{ form }}
+  </table>
+  <input type="submit" />
+</form>
+</body>
+</html>

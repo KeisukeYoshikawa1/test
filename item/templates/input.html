@@ -1,0 +1,10 @@
+<html>
+<head></head>
+<body>
+<form action="{% url 'item:post_e' %}" method="post">
+  {% csrf_token %}
+  <input name="message" />
+  <input type="submit" />
+</form>
+</body>
+</html>
